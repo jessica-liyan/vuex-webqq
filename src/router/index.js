@@ -1,15 +1,27 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
+import message from '@/components/message/message'
+import friends from '@/components/friends/friends'
+import discover from '@/components/discover/discover'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'Hello',
-      component: Hello
+      path: '/message',
+      name: 'message',
+      component: message
+    },
+    {
+      path: '/friends',
+      name: 'friends',
+      component: friends
+    },
+    {
+      path: '/discover',
+      name: 'discover',
+      component: discover
     }
   ]
 })
