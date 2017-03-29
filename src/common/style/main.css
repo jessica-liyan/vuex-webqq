@@ -28,3 +28,21 @@ i,em{font-style:normal;}b{font-weight:normal;}
 .fs-0{font-size:0px;}.fs-12{font-size:1.2rem;}.fs-14{font-size:1.4rem;}.fs-16{font-size:1.6rem;}.fs-18{font-size:1.8rem;}
 .c-white{color:#fff;} .c-4{color:#444;}.c-6{color:#666;} .c-3{color:#333;}
 
+.app{height:100%;}
+.app-top{height:10%;}
+.app-section{height:80%;overflow:auto;}
+.app-footer{height:10%;}
+/*页面顶部导航*/
+.nav{display:flex;background:#fff;}
+.nav .left,.nav .right{width:4rem;}
+.nav-txt{text-align:center;}
+.nav-txt i{font-size:1.6rem;text-transform:capitalize;display:inline-block;padding:0 1em;background:#2E2C6B;height:34px;line-height:34px;border-radius:4px;}
+.left .nav-left,.right .nav-right{width:3rem;height:3rem;margin:0 auto;}
+
+.pop-left{width:80%;height:100%;}
+.pop-left .person{padding-top:3rem;}
+.pop-left .person .mu-item-left{width:6rem;}
+.pop-left .person .mu-avatar{width:6rem;height:6rem;}
+.pop-left .person .mu-item-title{padding-left:3rem;font-size:1.8rem;}
+.pop-left .mu-item-title{font-size:1.4rem;}
+.pop-left .mu-text-field-hint{font-size:1.4rem;}

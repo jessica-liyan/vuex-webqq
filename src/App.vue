@@ -1,6 +1,7 @@
 <template>
   <div id="app" class="app">
     <div class="app-top">
+      <topNav></topNav>
     </div>
     <div class="app-section">
       <router-view></router-view>
@@ -12,18 +13,16 @@
 </template>
 
 <script>
+import topNav from './components/topnav/topnav'
 import bottomTab from './components/bottomtab/bottomtab'
 export default {
   name: 'app',
   components: {
-    bottomTab
+    bottomTab,
+    topNav
   }
 }
 </script>
 
 <style>
-.app{height:100%;}
-.app-top{height:10%;}
-.app-section{height:80%;overflow:auto;}
-.app-footer{height:10%;}
 </style>
