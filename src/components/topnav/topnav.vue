@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <mu-appbar class="nav">
-      <mu-avatar slot="left" src="../../../static/img/face.jpg" class="nav-left" @click="open('left')"/>
+  <div class="h">
+    <mu-appbar class="nav h">
+      <mu-avatar slot="left" :src="face" class="nav-left" @click="open('left')"/>
       <div class="nav-txt" slot="default">
         <i>{{headerTitle}}</i>
       </div>
@@ -10,10 +10,10 @@
     <mu-popup position="left" popupClass="pop-left" :open="leftPopup" @close="close('left')">
       <mu-list class="person">
         <mu-list-item title="麦芽糖">
-          <mu-avatar slot="left" src="../../../static/img/face.jpg"/>
+          <mu-avatar slot="left" :src="face"/>
         </mu-list-item>
         <mu-list-item>
-          <mu-auto-complete hintText="编辑个性签名" @input="handleInput" :dataSource="dataSource" @change="handlechange" />
+          <mu-text-field hintText="编辑个性签名" @input="handleInput" :dataSource="dataSource" @change="handlechange" />
         </mu-list-item>
       </mu-list>
       <mu-list class="list">
@@ -46,9 +46,7 @@ export default {
       dataSource: []
     }
   },
-  computed: mapState({
-    headerTitle: 'headerTitle'
-  }),
+  computed: mapState(['headerTitle', 'face']),
   methods: {
     open (position) {
       this[position + 'Popup'] = true

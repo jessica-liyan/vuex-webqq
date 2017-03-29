@@ -9,17 +9,20 @@
     <div class="app-footer">
       <bottomTab></bottomTab>
     </div>
+    <dialogList></dialogList>
   </div>
 </template>
 
 <script>
 import topNav from './components/topnav/topnav'
 import bottomTab from './components/bottomtab/bottomtab'
+import dialogList from './components/dialog/dialog'
 export default {
   name: 'app',
   components: {
     bottomTab,
-    topNav
+    topNav,
+    dialogList
   }
 }
 </script>
