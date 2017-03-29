@@ -18,6 +18,7 @@ export default {
   methods: {
     // 点击按钮
     handleChange (val) {
+      console.log(val, this)
       this.bottomNav = val
       // 路由跳转至当前点击的页面
       this.$router.push(val)

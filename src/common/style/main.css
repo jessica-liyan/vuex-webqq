@@ -36,7 +36,7 @@ i,em{font-style:normal;}b{font-weight:normal;}
 .nav{display:flex;background:#fff;}
 .nav .left,.nav .right{width:4rem;}
 .nav-txt{text-align:center;}
-.nav-txt i{font-size:1.6rem;text-transform:capitalize;display:inline-block;padding:0 1em;background:#2E2C6B;height:34px;line-height:34px;border-radius:4px;}
+.nav-txt i{font-size:1.6rem;text-transform:capitalize;display:inline-block;width:8rem;background:#2E2C6B;height:34px;line-height:34px;border-radius:4px;}
 .left .nav-left,.right .nav-right{width:3rem;height:3rem;margin:0 auto;}
 
 .pop-left{width:80%;height:100%;}

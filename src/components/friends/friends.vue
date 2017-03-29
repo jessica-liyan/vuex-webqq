@@ -1,6 +1,6 @@
 <template>
   <div>
-    discover
+    friends
   </div>
 </template>
 
